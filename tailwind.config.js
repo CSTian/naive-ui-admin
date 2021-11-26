@@ -5,6 +5,7 @@ module.exports = {
   purge: {
     enable: process.env.NODE_ENV === 'production',
     content: ['./index.html', './src/**/*.{vue,ts,tsx}'],
+  //  选项指定所有的 pages 和 components 文件，使得 Tailwind 可以在生产构建中对未使用的样式进行摇树优化。
   },
   theme: {
     extend: {

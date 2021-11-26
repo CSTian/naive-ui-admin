@@ -28,7 +28,7 @@ export function getUserInfo() {
 export function login(params) {
   return http.request<BasicResponseModel>(
     {
-      url: '/login',
+      url: '/userlogin',
       method: 'POST',
       params,
     },

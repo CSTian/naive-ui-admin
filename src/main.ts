@@ -1,5 +1,8 @@
+//引入tailwind提供的样式
 import './styles/tailwind.css';
+//vue3新特性,不能写import Vue from 'vue'
 import { createApp } from 'vue';
+//引入项目主文件
 import App from './App.vue';
 import router, { setupRouter } from './router';
 import { setupStore } from '@/store';
